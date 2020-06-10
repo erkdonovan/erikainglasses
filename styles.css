@@ -1,0 +1,177 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans",sans-serif;
+}
+
+h1 {
+	font-size: 55px;
+}
+
+h2 {
+	font-size: 45px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+button {
+
+}
+
+section {
+	padding: 20px 0 50px;
+}
+
+.container {
+	max-width: 1140px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url('images/p7224409.jpg');
+	background-position: center left;
+	background-size: cover;
+}
+
+nav {
+	padding: 10px 20px;
+}
+
+header nav img {
+	width: 15%;
+	display: inline-block;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+}
+
+nav ul li a {
+	color: #292d4b;
+	display: inline-block;
+}
+
+header section {
+	text-align: right;
+	padding: 12% 40px 22%;
+}
+
+.about {
+	width: 100%;
+	background: #292d4b;
+	color: white;
+}
+
+.about .items {
+	margin: 20px 0;
+}
+
+.about img {
+	width: 49%;
+	height: 50%;
+	margin: 0;
+	padding: 0;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about .content {
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.about .items:nth-of-type(1) .content {
+	padding-right: 20px;
+}
+
+.about .items:nth-of-type(2) .content {
+	padding-left: 20px;
+}
+
+.imageback {
+	background-size: cover;
+	padding: 18% 0;
+	background-position: center 20%;
+}
+
+.imageback.one {
+	background-image: url('images/P7083049.JPG');
+}
+
+.imageback.two {
+	background-image: url('images/newyork.jpg');
+}
+
+article {
+	width: 33%;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+article img {
+	width: 100%;
+}
+
+.thanks {
+	background-image: url('images/P7224486.JPG');
+	background-position: center 20%;
+	background-size: cover;
+	padding: 10% 0 20%;
+}
+
+.thanks h2 {
+	text-align: right;
+}
+
+.thanks a {
+	color: #ccc0b8;
+	display: block;
+	text-align: right;
+}
+
+footer {
+	background: #292d4b;
+}
+
+footer p {
+	font-size: 12px;
+	color: white;
+	margin: 0;
+	padding: 15px;
+}
