@@ -1,3 +1,8 @@
+/*Blue: #282c4a
+Tan: #ccc0b8
+Pink: #ff0253*/
+
+
 * {
 	box-sizing: border-box;
 }
@@ -15,6 +20,7 @@ h1 {
 h2 {
 	font-size: 45px;
 	text-align: center;
+	margin-top: 0;
 }
 
 h3 {
@@ -23,7 +29,9 @@ h3 {
 
 h4 {
 	font-size: 20px;
-	margin-bottom: 0;
+	margin: 5px auto;
+	text-align: center;
+	padding: 0 10px;
 }
 
 p {
@@ -41,7 +49,7 @@ button {
 }
 
 section {
-	padding: 20px 0 50px;
+	padding: 40px 0;
 }
 
 .container {
@@ -51,9 +59,13 @@ section {
 }
 
 header {
-	background-image: url('images/p7224409.jpg');
+	background-image: url('images/p7224409_web.jpg');
 	background-position: center left;
 	background-size: cover;
+}
+
+header img {
+	width: 40%;
 }
 
 nav {
@@ -87,7 +99,7 @@ nav ul li a {
 
 header section {
 	text-align: right;
-	padding: 12% 40px 22%;
+	padding: 7% 40px 18%;
 }
 
 .about {
@@ -116,12 +128,8 @@ header section {
 	vertical-align: middle;
 }
 
-.about .items:nth-of-type(1) .content {
+.about .items .content {
 	padding-right: 20px;
-}
-
-.about .items:nth-of-type(2) .content {
-	padding-left: 20px;
 }
 
 .imageback {
@@ -130,29 +138,79 @@ header section {
 	background-position: center 20%;
 }
 
-.imageback.one {
-	background-image: url('images/P7083049.JPG');
-}
-
 .imageback.two {
-	background-image: url('images/newyork.jpg');
+	background-image: url('images/P7083049_web.JPG');
 }
 
-article {
+.videos article a, .blog article {
 	width: 33%;
 	display: inline-block;
-	padding: 0 5px;
+	padding: 5px;
+	vertical-align: top;
 }
 
 article img {
 	width: 100%;
 }
 
+.blog article a {
+	color: black;
+	display: block;
+    padding: 0;
+}
+
+.blog article a:hover {
+	color: #ff0253;
+}
+
+.blog article .content p a {
+	font-size: 14px;
+	color: #ff0253;
+}
+
+.blog article .content a.blog-img {
+	height: 225px;
+}
+
+.blog article:nth-of-type(1) .content a.blog-img {
+	background: url('images/wordpress.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.blog article:nth-of-type(2) .content a.blog-img {
+	background: url('images/train.jpeg');
+	background-size: cover;
+	background-position: center;
+}
+
+.blog article:nth-of-type(3) .content a.blog-img {
+	background: url('images/birthday.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.blog article .content p a:hover {
+	color: #282c4a;
+}
+
+.blog article .content p.img-credit {
+	font-size: 8px;
+	text-align: left;
+}
+
+.blog article .content p.img-credit a {
+	display: inline-block;
+	color: black;
+	font-size: 8px;
+}
+
 .thanks {
-	background-image: url('images/P7224486.JPG');
+	background-image: url('images/P7224405_web.jpg');
 	background-position: center 20%;
 	background-size: cover;
 	padding: 10% 0 20%;
+	text-align: right;
 }
 
 .thanks h2 {
@@ -160,9 +218,8 @@ article img {
 }
 
 .thanks a {
-	color: #ccc0b8;
-	display: block;
-	text-align: right;
+	color: #ff0253;
+    display: inline-block;
 }
 
 footer {
