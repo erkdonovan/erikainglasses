@@ -241,6 +241,20 @@ article img {
 	text-align: right;
 }
 
+.thankyou {
+	text-align: center;
+}
+
+.thankyou a {
+	text-align: center;
+	color: #292d4b;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-size: 20px;
+	background: #00c2cb;
+	padding: 10px 15px; 
+}
+
 footer {
 	background: #292d4b;
 	padding: 20px 0;
