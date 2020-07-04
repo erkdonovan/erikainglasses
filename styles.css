@@ -1,6 +1,6 @@
-/*Blue: #282c4a
+/*Blue: #1e2662
 Tan: #ccc0b8
-Pink: #ff0253*/
+teal: #00c2cb*/
 
 
 * {
@@ -21,6 +21,7 @@ h2 {
 	font-size: 45px;
 	text-align: center;
 	margin-top: 0;
+	color: #1e2662;
 }
 
 h3 {
@@ -49,7 +50,11 @@ button {
 }
 
 section {
-	padding: 40px 0;
+	padding: 40px 0 0;
+}
+
+section:nth-of-type(4) {
+	padding: 40px 0 40px;
 }
 
 .container {
@@ -106,10 +111,15 @@ header section {
 	width: 100%;
 	background: #292d4b;
 	color: white;
+	padding: 40px 0 40px;
 }
 
 .about .items {
 	margin: 20px 0;
+}
+
+.about h3 {
+	margin-top: 0;
 }
 
 .about img {
@@ -142,8 +152,8 @@ header section {
 	background-image: url('images/P7083049_web.JPG');
 }
 
-.videos article a, .blog article {
-	width: 33%;
+.videos article a, .posts article {
+	width: 32%;
 	display: inline-block;
 	padding: 5px;
 	vertical-align: top;
@@ -153,82 +163,252 @@ article img {
 	width: 100%;
 }
 
-.blog article a {
+.posts article a {
 	color: black;
 	display: block;
     padding: 0;
 }
 
-.blog article a:hover {
-	color: #ff0253;
+.posts article a:hover {
+	color: #00c2cb;
 }
 
-.blog article .content p a {
+.posts article .content p a {
 	font-size: 14px;
-	color: #ff0253;
+	color: #00c2cb;
 }
 
-.blog article .content a.blog-img {
+.posts article .content a.post-img {
 	height: 225px;
 }
 
-.blog article:nth-of-type(1) .content a.blog-img {
+.blog article:nth-of-type(1) .content a.post-img {
 	background: url('images/wordpress.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
-.blog article:nth-of-type(2) .content a.blog-img {
+.blog article:nth-of-type(2) .content a.post-img {
 	background: url('images/train.jpeg');
 	background-size: cover;
 	background-position: center;
 }
 
-.blog article:nth-of-type(3) .content a.blog-img {
+.blog article:nth-of-type(3) .content a.post-img {
 	background: url('images/birthday.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
-.blog article .content p a:hover {
-	color: #282c4a;
+.twitch article:nth-of-type(1) .content a.post-img {
+	background: url('images/twitch_ca.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
-.blog article .content p.img-credit {
+.twitch article:nth-of-type(2) .content a.post-img {
+	background: url('images/twitch_thing.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.twitch article:nth-of-type(3) .content a.post-img {
+	background: url('images/tri-jurassic.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.posts article .content p a:hover {
+	color: #1e2662;
+}
+
+.posts article .content p.img-credit {
 	font-size: 8px;
 	text-align: left;
 }
 
-.blog article .content p.img-credit a {
+.posts article .content p.img-credit a {
 	display: inline-block;
 	color: black;
 	font-size: 8px;
 }
 
 .thanks {
-	background-image: url('images/P7224405_web.jpg');
+	background-image: url('images/newyork.jpg');
 	background-position: center 20%;
 	background-size: cover;
-	padding: 10% 0 20%;
+	padding: 20% 0 20%;
 	text-align: right;
-}
-
-.thanks h2 {
-	text-align: right;
-}
-
-.thanks a {
-	color: #ff0253;
-    display: inline-block;
 }
 
 footer {
 	background: #292d4b;
+	padding: 20px 0;
 }
 
 footer p {
 	font-size: 12px;
 	color: white;
+	text-align: center;
 	margin: 0;
 	padding: 15px;
+}
+
+footer a {
+	color: #00c2cb;
+    display: inline-block;
+}
+
+footer h3 {
+	color: white;
+	margin-bottom: 10px;
+}
+
+footer h3 .left {
+	color: white;
+	text-align: left;
+}
+
+footer h3 .right {
+	color: white;
+	text-align: right;
+}
+
+footer .left, footer .right {
+	width: 47%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer .right {
+	text-align: right;
+}
+
+.form {
+	margin: 0;
+	width: 310px;
+	margin: 0 auto;
+}
+
+.form input{
+	display: inline-block;
+	width: 150px;
+	height: 35px;
+	border: 2px solid #00c2cb;
+	margin: 0 0 5px;
+}
+
+.form textarea {
+	height: 100px;
+	width: 305px;
+	display: inline-block;
+	border: 2px solid #00c2cb;
+	font-family: "Open Sans",sans-serif;
+}
+
+.form input[type=submit] {
+	background: #00c2cb;
+	border: 1px solid #00c2cb;
+	color: #292d4b;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.form label {
+	/*vertical-align: top;
+	font-weight: bold;
+	font-size: 16px;
+	color: #292d4b;
+	background: #00c2cb;
+	padding: 0 10px;
+	margin: 0 0 5px;
+	text-align: left;
+	width: 150px;
+	display: inline-block;*/
+	width: 1px;
+    height: 1px;
+    overflow: hidden;
+    top: -10px;
+    position: absolute;
+    font-family: "Open Sans",sans-serif;
+}
+
+@media only screen and (max-width: 899px) {
+	.videos article a, .posts article {
+	    width: 49%;
+	}
+
+	header img {
+	    width: 52%;
+	}
+
+	header section {
+	    text-align: right;
+	    padding: 10% 40px 20%;
+	}
+
+	.about .content {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.about img {
+	    width: 100%;
+	    height: 35%;
+	}
+
+	.posts article:last-of-type, .videos article a:last-of-type {
+		display: none;
+	}
+
+	.thanks h2 {
+	    text-align: center;
+	}
+
+	.thanks a {
+	    margin: 0 0 10px;
+	}
+	
+	.about .items .content {
+	    padding-right: 0px;
+	    padding-bottom: 15px;
+	}
+
+	h3 {
+	    font-size: 30px;
+	    margin-top: 0;
+	}
+
+	footer .left, footer .right {
+		width: 100%;
+	}
+
+	footer .right {
+	    text-align: center;
+	    margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 739px) {
+	.about {
+	    padding: 20px 0 20px;
+	}
+
+
+	header section {
+	    text-align: right;
+	    padding: 15% 40px 35%;
+	}
+
+	header img {
+	    width: 65%;
+	}
+
+	h2 {
+	    font-size: 30px;
+	}
+
+	.videos article a, .posts article {
+	    width: 100%;
+	}
 }
