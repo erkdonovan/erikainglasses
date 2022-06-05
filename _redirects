@@ -1,8 +1,6 @@
 # Redirects from what the browser requests to what we serve
-http://shop.erikainglasses.com/* https://ko-fi.com/erikainglasses/shop:splat 301!
-https://shop.erikainglasses.com/* https://ko-fi.com/erikainglasses/shop:splat 301!
-http://links.erikainglasses.com/* https://erikainglasses.carrd.co:splat 301!
-https://links.erikainglasses.com/* https://erikainglasses.carrd.co:splat 301!
-/secretlab         https://secretlab.co/?rfsn=5506586.caaa30d&utm_source=refersion&utm_medium=affiliate&utm_campaign=5506586.caaa30d
-/twitch  https://www.twitch.tv/erikainglasses
+https://shop.erikainglasses.com/*   https://ko-fi.com/erikainglasses/shop
+https://links.erikainglasses.com/*  https://erikainglasses.carrd.co
+/secretlab  https://secretlab.co/?rfsn=5506586.caaa30d&utm_source=refersion&utm_medium=affiliate&utm_campaign=5506586.caaa30d
+/twitch https://www.twitch.tv/erikainglasses
 
