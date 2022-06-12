@@ -1,0 +1,86 @@
+/*
+=============================================================================
+                   Cards
+=============================================================================
+*/
+
+/* Base Styling */
+
+.cards{
+	ul{
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+	li{
+		list-style:none;
+	}
+	.card{
+		img{
+			width:100%;
+		}
+
+		margin: 0 0.5rem;
+		&:first-of-type{
+			margin-left: 0;
+		}
+		&:last-of-type{
+			margin-right: 0;
+		}
+	}
+
+	@media (max-width: $tablet){
+		ul{flex-wrap:wrap;}
+		.card{
+			margin:1rem;
+			&:first-of-type{
+				margin-left: 1rem;
+			}
+			&:last-of-type{
+				margin-right: 1rem;
+			}
+		}
+	}
+
+}
+
+/* Shop */
+
+.shop{
+	@extend .cards;
+	li{
+		flex-basis: 25%
+	}
+	.text{
+		background: $secondary;
+		padding: 5%;
+	}
+
+	@media (max-width: $tablet){
+		li{
+			flex-basis: calc(50% - 2rem);
+		}
+	}
+
+
+}
+
+/* Pics */
+
+.pics{
+	@extend .cards;
+	li{
+		flex-basis: 33.33%;
+	}
+	.text{
+		background: $gray;
+		padding: 1% 5%;
+		text-align:center;
+	}
+
+	@media (max-width: $tablet){
+		li{
+			flex-basis: calc(50% - 2rem);
+		}
+	}
+}

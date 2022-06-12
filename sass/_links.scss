@@ -1,0 +1,109 @@
+/*
+=============================================================================
+                   Links
+=============================================================================
+*/
+
+.links{
+	background:$secondary;
+	width: 60%;
+	max-width: 600px;
+	padding: 2rem 0;
+	border-radius:20px;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+
+	section{
+		padding: 1rem 2rem;
+	}
+	ul{
+		padding: 0;
+		display: flex;
+		li{
+			list-style: none;
+		}
+	}
+
+	a:hover, a:active, a:focus{
+		text-decoration:none;
+		-webkit-text-stroke:none;
+	}
+
+	.logo{
+		height: 100px;
+		img{
+			margin: 0 auto;
+		}
+	}
+
+	.headline h1{
+		margin-bottom: 0;
+	}
+
+	.socialLinks{
+		justify-content: center;
+		li{ margin: 1rem;}
+		a{
+			font-size: 3rem;
+			&:hover, &:active, &:focus{
+				color:$tertiary;
+			}
+		}
+	}
+
+	.linkList{
+		flex-direction: column;
+		.secondaryButton{
+			margin: 0.5rem;
+			color: white;
+			display:block;
+			padding: 1rem 2rem;
+			border-radius: 10px;
+			text-align:left;
+			&:hover, &:active, &:focus{
+				color:$primary;
+			}
+		}
+
+	}
+
+	.emailWrap{
+		border: 2px solid $primary;
+		border-radius: 20px;
+		#mc_embed_signup{
+			width: 100%;
+			padding: 0 2rem;
+		}
+		#mc_embed_signup input{
+			border-color: $primary;
+		}
+	}
+
+	.emailWrap #mc-embedded-subscribe.button{
+		border-color: $primary;
+		background: $primary;
+		color:white;
+		&:hover, &:active, &:focus{
+		    -webkit-text-stroke: 0.5px $primary;
+		    color: $primary;
+		    background: transparent;
+		}
+	}
+
+	@media (max-width:$tablet){
+		width: 80%;
+		position:relative;
+		top:unset;
+		left: unset;
+		transform: none;
+		margin: 3rem auto;
+
+	}
+	@media (max-width:$mobile){
+		width: calc(100% - 2rem);
+		margin: 1rem auto;
+	}
+}

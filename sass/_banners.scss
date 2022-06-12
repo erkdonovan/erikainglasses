@@ -1,0 +1,132 @@
+/*
+=============================================================================
+                   Banners
+=============================================================================
+*/
+
+/* Single Text Line */
+
+	.banner{
+		@include header;
+		background:$tertiary;
+		text-align:center;
+		padding: 1rem 5rem;
+		font-size: 1.4rem;
+	}
+
+/* Image/Text - Mascot */
+	.imageBanner{
+		display:grid;
+		grid-template-columns:35% 60%;
+		grid-gap: 5%;
+		.image{
+			img{
+				object-fit:cover;
+				width:100%;
+				height: 100%;
+				margin: 0 auto;
+			}
+		}
+		.text{
+			padding: 0 5%;
+		}
+
+		@media (max-width: $tablet) {
+			grid-template-columns:100%;
+			grid-gap: 0;
+
+			.text{
+				padding: 5%;
+			}
+		}
+	}
+
+	.mascot{
+		@extend .imageBanner;
+		background: $tertiary;
+		padding:0;
+		margin: 3rem 5rem;
+		@media (max-width: $mobile){
+			margin: 3rem 2rem;
+		}
+	}
+
+/* Email */
+	/* MC Embed Styles */
+		#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
+		#mergeRow-gdpr {margin-top: 20px;}
+		#mergeRow-gdpr fieldset label {font-weight: normal;}
+		#mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
+	
+	/* MC Overrides */
+		#mc_embed_signup{
+			width:60%;
+			margin: 0 auto;
+
+			.fieldGroups {
+				display: flex;
+				justify-content: space-between;
+				input{
+					background: none;
+				}
+				.mc-field-group{
+					width: calc(50% - 10px);
+				}
+			}
+
+			.asterisk{
+				font-size:inherit;
+				top: -5px;
+			}
+
+			@media (max-width: $tablet){
+				width:100%;
+				padding: 0 2rem;
+			}
+			@media (max-width: $mobile){
+				.fieldGroups{
+					flex-direction: column;
+					.mc-field-group{
+						width: 100%;
+					}
+				}
+
+				.optionalParent{
+					margin-top:1rem;
+				}
+
+			}
+
+		}
+
+
+		#mc-embedded-subscribe.button{
+			background: white;
+			color:#1E2662;
+			border: 1px solid white;
+		}
+
+		#mc-embedded-subscribe.button:hover, #mc-embedded-subscribe.button:active, #mc-embedded-subscribe.button:focus{
+			background: transparent;
+			color:white;
+		}
+
+	.email{
+		text-align:center;
+		background: $primary;
+		color: white;
+		h1{
+			margin-top:0;
+			padding:3rem 2rem 0 2rem;
+		}
+		.subhead{
+			color:$gray;
+			margin-bottom: 0;
+			padding: 0 2rem;
+		}
+
+		.button:active,.button:hover,.button:focus{
+			-webkit-text-stroke:0.5px white;
+		}
+
+	}
