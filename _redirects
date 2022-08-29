@@ -1,6 +1,6 @@
 # Redirects from what the browser requests to what we serve
-https://shop.erikainglasses.com/*   https://ko-fi.com/erikainglasses/shop 301!
-http://shop.erikainglasses.com/*   https://ko-fi.com/erikainglasses/shop 301!
+https://shop.erikainglasses.com/*   https://erikainglasses.etsy.com/ 301!
+http://shop.erikainglasses.com/*   https://erikainglasses.etsy.com/ 301!
 
 https://links.erikainglasses.com/*   https://erikainglasses.carrd.co 301!
 http://links.erikainglasses.com/*   https://erikainglasses.carrd.co 301!
