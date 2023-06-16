@@ -938,3 +938,29 @@ main.policies section {
     border-radius: 50%;
     border: #1E2662 5px solid;
 }
+
+.img-left, .img-right {
+	width: 30%;
+	display: inline-block;
+}
+
+.copy-left, .copy-right {
+	width: 60%;
+	display: inline-block;
+}
+
+.img-left {
+	
+}
+
+.img-right {
+
+}
+
+.copy-left {
+	padding-right: 20px;
+}
+
+.copy-right {
+	padding-left: 20px;
+}
