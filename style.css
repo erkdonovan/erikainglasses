@@ -939,6 +939,13 @@ main.policies section {
     border: #1E2662 5px solid;
 }
 
+/* Dungeon Master Page */
+
+.dm-page {
+	width: 80%;
+	text-align: center;
+}
+
  .dm-dice {
 	 display: flex;
 	 align-items: center;
