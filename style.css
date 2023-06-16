@@ -939,28 +939,16 @@ main.policies section {
     border: #1E2662 5px solid;
 }
 
+ .dm-dice {
+	 display: flex;
+	 align-items: center;
+ }
+
 .img-left, .img-right {
 	width: 60%;
-	display: inline-block;
 }
 
 .copy-left, .copy-right {
-	width: 39%;
-	display: inline-block;
-}
-
-.img-left {
-	
-}
-
-.img-right {
-
-}
-
-.copy-left {
-	padding-right: 20px;
-}
-
-.copy-right {
-	padding-left: 20px;
+	width: 40%;
+	padding: 0 20px;
 }
