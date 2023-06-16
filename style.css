@@ -940,12 +940,12 @@ main.policies section {
 }
 
 .img-left, .img-right {
-	width: 30%;
+	width: 60%;
 	display: inline-block;
 }
 
 .copy-left, .copy-right {
-	width: 60%;
+	width: 40%;
 	display: inline-block;
 }
 
