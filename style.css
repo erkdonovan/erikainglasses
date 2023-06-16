@@ -943,7 +943,7 @@ main.policies section {
 
 .dm-page {
 	width: 80%;
-	text-align: center;
+	margin: 0 auto;
 }
 
  .dm-dice {
