@@ -949,6 +949,7 @@ main.policies section {
  .dm-dice {
 	 display: flex;
 	 align-items: center;
+	 border-bottom: 2px solid #1E2662;
  }
 
 .img-left, .img-right {
@@ -958,4 +959,18 @@ main.policies section {
 .copy-left, .copy-right {
 	width: 40%;
 	padding: 0 20px;
+}
+
+@media (max-width:500px){
+.dm-dice {
+    flex-direction: column;
+	}
+.copy-left, .copy-right {
+    width: 100%;
+    order: 2;
+	}
+.img-left, .img-right {
+	width: 100%;
+	order: 1;
+}
 }
