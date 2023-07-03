@@ -1,6 +1,6 @@
 # Redirects from what the browser requests to what we serve
 
-https://;shop.erikainglasses.com/dungeon-master-dice  https://www.erikainglasses.com/dungeon-master-dice
+https://shop.erikainglasses.com/dungeon-master-dice  https://www.erikainglasses.com/dungeon-master-dice
 
 https://shop.erikainglasses.com/*   https://erikainglasses.etsy.com/ 301!
 http://shop.erikainglasses.com/*   https://erikainglasses.etsy.com/ 301!
