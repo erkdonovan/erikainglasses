@@ -958,7 +958,7 @@ main.policies section {
  }
 
  .dm-dice:last-of-type {
-    border-bottom: 0;
+    border-bottom: 0 solid white;
  }
 
 .img-left, .img-right {
