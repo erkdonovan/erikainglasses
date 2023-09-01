@@ -918,6 +918,12 @@ footer .bottom{
         width:calc(100% - 2rem);
         margin:1rem auto
     }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        padding: 5px 0;
+    }
 }
 /*# sourceMappingURL=style.css.map */
 
