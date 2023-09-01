@@ -957,6 +957,10 @@ main.policies section {
 	 border-bottom: 2px solid #C5C1FB;
  }
 
+ .dm-dice:last-of-type {
+    border-bottom: 0;
+ }
+
 .img-left, .img-right {
 	width: 60%;
 }
