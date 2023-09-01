@@ -897,6 +897,11 @@ footer .bottom{
     color:#1E2662;
     background:transparent
 }
+
+.custom-order {
+    justify-content: center;
+}
+
 @media (max-width:800px){
     .links{
         width:80%;
